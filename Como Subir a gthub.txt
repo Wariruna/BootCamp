@@ -1,0 +1,14 @@
+Se debe crear una carpeta local y un repositorio en github (creo que con el mismo nombre ambos dos). Despues se clicka boton derecho en la carpeta local y se abre la terminal de git.
+	
+	PASOS INICIO DE PROYECTO:
+		1) git init
+		2)git add . // Esto añade todo lo de la carpeta a la memoria de subida de git
+		3)git commit -m "mensaje" //mensaje que se mostrará esta operación.
+		4)git branch -M main //Se especifica que se quiere agregar a la ruta principal del repositorio.
+		5)git remote add origin git@github.com:Wariruna/[nombreRepositorio].git
+		6)git push-u origin main
+
+	PASOS ACTUALIZACIONES:
+		1)git status // Nos aparecen los archivos con modificaciones
+		2)git commit -m "Primera modificación"
+		3)git push -u origin main
