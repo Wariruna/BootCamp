@@ -1,0 +1,3 @@
+Desde la carpeta raiz del proyecto, desde la terminal ejecutar siguiente comando:
+
+		1) npm start
