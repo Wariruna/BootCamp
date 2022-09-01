@@ -1,19 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+//Function type to one line(Return the first component)
+const Header = ({course}) => <h1>{course}</h1>
 
-const Title = (props) => { 
-  return <h1>{props.course}</h1>
-}
-
-const Paragraph = (props) => {
+const Content = (props) => {
   return (
     <p>{props.parts} {props.parts2}</p>
   )
 }
 
-const TotalExercises = (props) => {
+const Total = (props) => {
   return(
-    <p>Total de Ejercicios {props.exe1 + props.exe2 + props.exe3} </p>
+    <p>Number of exercises {props.exe1 + props.exe2 + props.exe3} </p>
   )
 }
 
@@ -28,11 +26,11 @@ const App = () => {
 
   return (
     <div>
-      <Title course={course} part={part1}></Title>
-      <Paragraph parts={part1} parts2={exercises1}></Paragraph>
-     <Paragraph parts={part2} parts2={exercises2}></Paragraph>
-     <Paragraph parts={part3} parts2={exercises3}></Paragraph>
-      <TotalExercises exe1={exercises1} exe2={exercises2} exe3={exercises3} />
+      <Header course={course} part={part1}></Header>
+      <Content parts={part1} parts2={exercises1}></Content>
+     <Content parts={part2} parts2={exercises2}></Content>
+     <Content parts={part3} parts2={exercises3}></Content>
+      <Total exe1={exercises1} exe2={exercises2} exe3={exercises3} />
     </div>
   )
 }
