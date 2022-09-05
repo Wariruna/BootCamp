@@ -1,3 +1,8 @@
-Desde la carpeta raiz del proyecto, desde la terminal ejecutar siguiente comando:
+Cuando ya existe un proyecto:
 
+	Desde la carpeta raiz del proyecto, desde la terminal ejecutar siguiente comando:
 		1) npm start
+
+Creando un nuevo proyecto:
+	En la carpeta donde se incluirá el proyecto:
+		1) npx create-react-app [nombreDelProyecto]
